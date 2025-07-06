@@ -1,0 +1,92 @@
+/* ========== Google Fonts ========== */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fefefe;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========== Header ========== */
+header {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+#course-title {
+  display: block; /* REQUIRED: display span as block */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* ========== Navigation ========== */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.5rem;
+  background-color: #0055a5;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ffffff33; /* light transparent overlay */
+  color: yellow;
+  text-decoration: underline;
+  border-radius: 5px;
+}
+
+/* ========== Main Content ========== */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* ========== Cards Layout with Grid ========== */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #eaeaea;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+}
+
+/* ========== Images ========== */
+.card img {
+  width: 50%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* ========== Footer ========== */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
