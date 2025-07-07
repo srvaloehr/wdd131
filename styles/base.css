@@ -42,7 +42,7 @@ nav {
   grid-column: 1 / 4;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2.5rem;
   padding: 0.5rem;
   background-color: #0055a5;
 }
@@ -81,7 +81,7 @@ main {
   display: grid;
   grid-template-columns: 1fr; 
   gap: 1.5rem;
-  max-width: 700px;
+  max-width: 6000px;
 }
 
 
@@ -90,7 +90,7 @@ main {
   font-family: 'Montserrat', sans-serif;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 51px rgba(0,0,0,0.1);
 }
 
 
@@ -101,6 +101,14 @@ main {
   border-radius: 8px;
   margin: 10px;
 }
+.aside-content {
+  grid-column: 3 / 4; /* RIGHT side */
+  background-color: #eaeaea;
+  padding: 5rem;
+  border-radius: 8px;
+  margin: 10px;
+  max-width: 300px;
+}
 
 
 footer {
@@ -109,5 +117,5 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
-  font-size: 0.9rem;
+  font-size: .9rem;
 }
