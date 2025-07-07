@@ -1,30 +1,45 @@
-/* ========== Google Fonts ========== */
+
 body {
+  display: grid;
+  grid-template-columns: auto 1fr auto; 
+  grid-template-rows: auto 1fr auto;    
+  min-height: 100vh;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
   font-family: 'Roboto', sans-serif;
   background-color: #fefefe;
   color: #222;
-  margin: 0;
-  padding: 0;
+
+  
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  gap: 0.5rem;
 }
 
-/* ========== Header ========== */
+
 header {
+  grid-column: 1 / 4;
   background-color: #003366;
   color: white;
   text-align: center;
   padding: 1rem 0;
 }
 
+
 #course-title {
-  display: block; /* REQUIRED: display span as block */
+  display: block;
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
-/* ========== Navigation ========== */
+
 nav {
+  grid-column: 1 / 4;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
@@ -41,49 +56,55 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #ffffff33; /* light transparent overlay */
+  background-color: #ffffff33;
   color: yellow;
   text-decoration: underline;
   border-radius: 5px;
 }
 
-/* ========== Main Content ========== */
-main {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1rem;
-}
 
-/* ========== Cards Layout with Grid ========== */
-main {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-}
-
-.card {
+.left-sidebar {
+  grid-column: 1 / 2;
   background-color: #eaeaea;
   padding: 1rem;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+
+main {
+  grid-column: 2 / 3;
+  background-color: #eaeaea;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 1.5rem;
+  max-width: 700px;
+}
+
+
+.card {
+  padding: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.card h2 {
-  margin-top: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.2rem;
+
+.right-sidebar {
+  grid-column: 3 / 4;
+  background-color: #eaeaea;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 10px;
 }
 
-/* ========== Images ========== */
-.card img {
-  width: 50%;
-  height: auto;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-}
 
-/* ========== Footer ========== */
 footer {
+  grid-column: 1 / 4;
   background-color: #003366;
   color: white;
   text-align: center;
