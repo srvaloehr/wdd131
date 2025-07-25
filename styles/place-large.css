@@ -1,0 +1,35 @@
+@media screen and (min-width: 1000px) {
+  main {
+    position: relative;
+  }
+
+  .hero {
+    height: 900px;
+  }
+
+  .hero img {
+    height: 900px;
+  }
+
+
+  
+  #data-content {
+    position: absolute;
+    width: 300px;
+    top: 40px;
+    left: 40px;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    opacity: 0.8;
+  }
+
+  #weather-content {
+    position: absolute;
+    width: 300px;
+    bottom: 40px;
+    right: 40px;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    opacity: 0.8;
+  }
+}

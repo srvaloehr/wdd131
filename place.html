@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Current Place</title>
+    <meta
+      name="description"
+      content="Arizona -Born and Raised. Stephen Loehr"
+    />
+    <meta name="author" content="Stephen Loehr" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/place-large.css" />
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 class="title">Arizona</h1>
+      </div>
+    </header>
+    <main>
+      <div class="hero">
+        <picture>
+          <source
+            media="(min-width: 1000px)"
+            srcset="images/IMG_AZ.jpg"
+          />
+          <source
+            media="(min-width: 500px)"
+            srcset="images/IMG_AZ.jpg"
+          />
+          <img
+            class="hero-img"
+            src="images/IMG_AZ.jpg"
+            alt="country"
+            width="1000"
+            height="500"
+          />
+        </picture>
+      </div>
+      <div id="data-content" class="content">
+        <h2>Data</h2>
+        <p>Area: 113,998 mi²</p>
+        <p>Population: 7.582 million</p>
+        <p>Capital: Phoenix</p>
+        <p>Languages: English, Spanish, other</p>
+        <p>Currency: Dollar</p>
+        <p>Time Zone: GMT-7</p>
+        <p>Calling Code: +1</p>
+        <p>Internet TLD: .us</p>
+      </div>
+      <div id="weather-content" class="content">
+        <h2>Weather</h2>
+        <img class="weather-icon" src="images/weather.png" alt="weather icon" />
+        <p>Temperature: <span id="temperature"></span></p>
+        <p>Conditions: <span id="condition"></span></p>
+        <p>Wind: <span id="wind"></span></p>
+        <p>Wind Chill: <span id="windChill"></span></p>
+      </div>
+    </main>
+    <footer>
+      <p>©<span id="currentyear"></span> Stephen Loehr Arizona</p>
+      <p>Last Modification <span id="lastModified"></span></p>
+    </footer>
+  </body>
+</html>
