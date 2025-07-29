@@ -1,0 +1,28 @@
+@media screen and (min-width: 900px) {
+  .hamburger-menu-icon,
+  .close-icon {
+    display: none;
+  }
+
+  .close-icon.show {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    position: relative;
+    width: fit-content;
+  }
+
+  .navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navigation li {
+    list-style-type: none;
+    width: 100px;
+    height: 80px;
+  }
+}
