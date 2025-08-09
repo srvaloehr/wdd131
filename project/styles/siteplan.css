@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Monda", sans-serif;
+  margin: 1rem;
+}
+
+p {
+  margin-bottom: 0.4rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 1rem 0;
+}
+
+#primary-color,
+#secondary-color {
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+}
+
+#primary-color {
+  background-color: #E71D36;
+}
+
+#secondary-color {
+  background-color: #08B2E3;
+}
+
+#desktop-view-wireframe { 
+    width: 100%;
+    max-width: 500px;
+}
