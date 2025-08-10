@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="product review form" />
+    <meta name="author" content="Stephen Loehr" />
+  </head>
+  <body>
+    <h1>Product Review</h1>
+
+    <form action="review.html" method="get" class="product-form">
+      <label for="product-select">
+        Product Name
+        <select name="product-select" id="product-select" required>
+          <option disabled selected>Select a Product...</option>
+        </select>
+      </label>
+
+      <p>Overall Rating</p>
+      <div class="rating-container">
+        <label for="rate1">
+          &star;
+          <input type="radio" id="rate1" name="rating" required />
+        </label>
+        <label for="rate2">
+          &star;&star;
+          <input type="radio" id="rate2" name="rating" required />
+        </label>
+        <label for="rate3">
+          &star;&star;&star;
+          <input type="radio" id="rate3" name="rating" required />
+        </label>
+        <label for="rate4">
+          &star;&star;&star;&star;
+          <input type="radio" id="rate4" name="rating" required />
+        </label>
+        <label for="rate5">
+          &star;&star;&star;&star;&star;
+          <input type="radio" id="rate5" name="rating" required />
+        </label>
+      </div>
+
+      <label for="date">
+        Date of Installation
+        <input type="date" name="date" id="date" required />
+      </label>
+
+      <div class="feature-option">
+        <p>Which features did you find useful in the product?</p>
+        <p>(Check all that apply)</p>
+        <label for="durability">
+          <input
+            type="checkbox"
+            id="durability"
+            name="durability"
+            value="durability"
+          />Durability
+        </label>
+        <label for="easeOfUse">
+          <input
+            type="checkbox"
+            id="easeOfUse"
+            name="easeOfUse"
+            value="easeOfUse"
+          />Ease of Use
+        </label>
+        <label for="performance">
+          <input
+            type="checkbox"
+            id="performance"
+            name="performance"
+            value="performance"
+          />performance
+        </label>
+        <label for="design">
+          <input
+            type="checkbox"
+            id="design"
+            name="design"
+            value="design"
+          />design
+        </label>
+      </div>
+
+      <label for="opinion">
+        Written Review <span>(Optional)</span>
+        <textarea name="opinion" id="opinion"></textarea>
+      </label>
+
+      <label for="name">
+        Your Name<span> (Optional)</span>
+        <input type="text" name="name" id="name" />
+      </label>
+
+      <input type="submit" name="submit" id="submit" value="Review a product" />
+    </form>
+
+    <footer>
+      <div class="footer-content">
+        <p>©<span id="currentYear"></span> Stephen Loehr</p>
+        <p>Last Modification <span id="lastModified"></span></p>
+      </div>
+    </footer>
+  </body>
+</html>
