@@ -8,30 +8,30 @@ lastModified.innerHTML = `${document.lastModified}`;
 
 const products = [
   {
-    id: "DC-187",
-    name: "Barbell",
-    averagerating: 4.5,
+    id: "fc-1888",
+    name: "flux capacitor",
+    averagerating: 4.5
   },
   {
-    id: "DB-656",
-    name: "S&W .357",
-    averagerating: 4.7,
+    id: "fc-2050",
+    name: "power laces",
+    averagerating: 4.7
   },
   {
-    id: "KB-901",
-    name: "Kettlebell",
-    averagerating: 3.5,
+    id: "fs-1987",
+    name: "time circuits",
+    averagerating: 3.5
   },
   {
-    id: "CB-900",
-    name: "Cable Pulley",
-    averagerating: 3.9,
+    id: "ac-2000",
+    name: "low voltage reactor",
+    averagerating: 3.9
   },
   {
-    id: "GL-160",
-    name: "Canik Mete",
-    averagerating: 5.0,
-  },
+    id: "jj-1969",
+    name: "warp equalizer",
+    averagerating: 5.0
+  }
 ];
 
 const productSelect = document.querySelector("#product-select");
