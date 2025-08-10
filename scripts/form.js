@@ -38,7 +38,7 @@ const productSelect = document.querySelector("#product-select");
 
 products.forEach((product) => {
   const option = document.createElement("option");
-  option.setAttribute("id", product.id);
+  option.value = product.id;
   option.textContent = product.name;
   productSelect.appendChild(option);
 });
