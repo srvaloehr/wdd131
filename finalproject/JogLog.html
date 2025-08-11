@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The JogLog</title>
+  <link rel="stylesheet" href="styles/JogLog.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">The JogLog</div>
+    
+    <nav>
+      <a href="JogLog.html">Home</a>
+      <a href="Gear.html">Gear</a>  
+      <a href="Guide.html">Guide</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <img 
+        src="images/goggins.webp" 
+        alt="Running shoes on a trail" 
+        class="intro-image" />
+    </section>
+    
+
+    <section class="subsections">
+      <a href="Gear.html" class="section-link">
+        <div class="section" id="gear">
+          <img src="images/gear.jpg" alt="Running gear">
+          <h2>Gear Advice</h2>
+          <p>Discover the best beginner running gear recommendations, from shoes to apparel and accessories to help you run comfortably and safely.</p>
+        </div>
+      </a>
+
+      <a href="Guide.html" class="section-link">
+        <div class="section" id="guide">
+          <img src="images/form.jpeg" alt="Running form">
+          <h2>Beginner Running Tips</h2>
+          <p>Learn how to start running, avoid injuries, and build stamina with expert tips tailored for newcomers to the running community.</p>
+        </div>
+      </a>
+    </section>
+
+    <section id="map-section">
+      <!-- Map will be injected here -->
+    </section>
+  </main>
+  
+  <p style="margin-top: 1rem; text-align: center;">
+    Looking for more trails? Check out 
+    <a href="https://www.alltrails.com" target="_blank" rel="noopener noreferrer">
+      AllTrails.com
+    </a> for great trail maps and reviews!
+  </p>
+</section>
+
+  <script src="scripts/JogLog.js"></script>
+  <footer>
+      <p>©<span id="currentyear"></span> Stephen Loehr</p>
+      <p>Last Modified <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
