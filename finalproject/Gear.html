@@ -5,16 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The JogLog - Gear</title>
   <link rel="stylesheet" href="styles/JogLog.css" />
+  <script src="./scripts/getdates.js" defer></script>
 </head>
 <body>
+
   <header>
-    <div class="logo">The JogLog</div>
+    <div class="logo">
+      <img src="images/Logo.webp" alt="The JogLog Logo">
+    </div>
+    
     <nav>
       <a href="JogLog.html">Home</a>
-      <a href="gear.html" aria-current="page">Gear</a>
+      <a href="Gear.html">Gear</a>  
       <a href="Guide.html">Guide</a>
     </nav>
   </header>
+
 
   <main>
     <section class="gear-intro">
@@ -25,51 +31,65 @@
     <section class="gear-categories">
       <div class="category">
         <h2>Shoes</h2>
-        <img src="images/shoes.webp" alt="Running shoes" />
+        <img src="images/shoes.webp" alt="Running shoes" loading="lazy"/>
+        <h2>Check These Out!</h2>
         <ul>
             <li><a href="https://www.hoka.com" target="_blank" rel="noopener noreferrer">Hoka</a></li>
             <li><a href="https://www.saucony.com" target="_blank" rel="noopener noreferrer">Saucony</a></li>
             <li><a href="https://www.nike.com" target="_blank" rel="noopener noreferrer">Nike</a></li>
             <li><a href="https://www.asics.com" target="_blank" rel="noopener noreferrer">Asics</a></li>
             <li><a href="https://www.adidas.com" target="_blank" rel="noopener noreferrer">Adidas</a></li>
-            <li><a href="https://www.newbalance.com" target="_blank" rel="noopener noreferrer">New Balance</a></li>
+            <li><a href="https://www.newbalance.com/men/shoes/all-shoes/" target="_blank" rel="noopener noreferrer">New Balance</a></li>
             <li><a href="https://www.on-running.com" target="_blank" rel="noopener noreferrer">On Cloud</a></li>
             <li><a href="https://www.brooksrunning.com" target="_blank" rel="noopener noreferrer">Brooks</a></li>
         </ul>
         </div>
 
-      <div class="category">
-        <h2>Foods</h2>
-        <img src="images/gell.webp" alt="Energy gels" />
-        <ul>
-            <li>Gels</li>
-            <li>Salt Tabs</li>
-            <li>Liquid IV / Electrolytes</li>
-        </ul>
-        </div>
+
 
         <div class="category">
-        <h2>Accessories</h2>
-        <img src="images/gear2.webp" alt="Running accessories" />
+        <h2>Hydration Help</h2>
+        <img src="images/gell.webp" alt="Energy gels" loading="lazy"/>
         <ul>
-            <li>Camelbak</li>
-            <li>Water Bottles</li>
-            <li>Weight Vests</li>
+            <li><a href="https://guenergy.com/collections/gels?srsltid=AfmBOopaQ2tcQZHzOKbvOZ8woEhRQNZec9Gkr9ckjRhzw2LkAomOK4-P" target="_blank" rel="noopener noreferrer">Energy Gels</a></li>
+            <li><a href="https://aletenutrition.com/pages/saltstick?srsltid=AfmBOoo1qg_LoZh5aW9stdlcbfy4dhGyiEGh7XdyQkWZyeUKlk5CTtBD" target="_blank" rel="noopener noreferrer">Salt Tablets</a></li>
+            <li><a href="https://www.liquid-iv.com" target="_blank" rel="noopener noreferrer">Liquid IV / Electrolytes</a></li>
         </ul>
         </div>
+        <div class="category">
+        <h2>Accessories</h2>
+        <img src="images/gear2.webp" alt="Running accessories" loading="lazy"/>
+        <ul>
+            <li><a href="https://camelbak.com" target="_blank" rel="noopener noreferrer">Camelbak</a></li>
+            <li>Water Bottles</li>
+            <li><a href="https://www.roguefitness.com/bodyweight-gymnastics/body-weight/weight-vests" target="_blank" rel="noopener noreferrer">Weighted Vests</a></li>
+        </ul>
+        </div>
+        <div class="category">
+        <h2>Nutrition</h2>
+        <img src="images/food.webp" alt="Healthy running foods" loading="lazy"/>
+        <ul>
+            <li>Bananas</li>
+            <li>Oats</li>
+            <li>Sweet Potatoes</li>
+            <li>Peanut Butter</li>
+            <li>Almonds</li>
+            <li>Greek Yogurt</li>
+            <li>Berries</li>
+        </ul>
+    </div>
     </section>
-    <section class="gear-categories">
-
-  
-     
-
-  <!-- Repeat similarly for Foods and Accessories -->
-
-</section>
+    
 
     <section class="back-home">
       <a href="JogLog.html">← Back to Home</a>
     </section>
   </main>
+   <footer>
+       <p>©<span id="lastModified"></span> Stephen Loehr</p>
+      <p id="lastmodified"></p> <span id="currentyear"></span>
+      
+    </footer>
 </body>
+   
 </html>

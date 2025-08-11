@@ -27,28 +27,37 @@ body {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
+  justify-content: center; 
+  padding: 2rem 2rem;
   background-color: var(--dark);
   color: var(--light);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
+h2.site-heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
+}
 
 .logo {
-  font-weight: bold;
-  font-size: 1.5rem;
-  cursor: default;
-  user-select: none;
-  color: var(--red);
-  font-family: 'Arial Black', Gadget, sans-serif;
+  position: absolute; 
+  left: 4rem;
+}
+
+.logo img {
+  height: 97px;
+}
+
+nav {
+  display: flex;
 }
 
 nav a {
   color: var(--light);
   text-decoration: none;
-  margin-left: 1.5rem;
+  margin: 0 1.5rem;
   font-weight: 600;
   font-size: 1rem;
   transition: color 0.3s ease;
@@ -58,7 +67,7 @@ nav a:hover {
   color: var(--red);
 }
 
-/* MAIN INTRO */
+
 main {
   flex-grow: 1;
   padding: 2rem;
@@ -75,14 +84,14 @@ main {
 }
 footer {
   margin-top: 2rem;
-  background-color: var(--secondary-color);
+  background-color: black;
   text-align: center;
-  color: black;
+  color: white;
   height: 90px;
   padding: 1rem;
   font-size: 1.15rem;
 }
-/* SUBSECTIONS */
+
 .subsections {
   display: flex;
   gap: 2rem;
@@ -92,16 +101,16 @@ footer {
 }
 
 .section {
-  flex-grow: 1;           /* take equal remaining space */
-  flex-shrink: 1;         /* allow shrinking */
-  flex-basis: 45%;        /* roughly 45% width */
+  flex-grow: 1;           
+  flex-shrink: 1;
+  flex-basis: 45%;        
   background-color: var(--blue);
   color: var(--light);
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  min-width: 280px;       /* prevent too small */
-  box-sizing: border-box; /* include padding in width */
+  min-width: 280px;       
+  box-sizing: border-box; 
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -110,9 +119,9 @@ footer {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 .section-link {
-  text-decoration: none; /* Remove underline from the link */
-  color: inherit;        /* Use the text color from your theme */
-  display: block;        /* Make the link fill the box area */
+  text-decoration: none; 
+  color: inherit;        
+  display: block;        
 }
 .section img {
   width: 100%;
@@ -135,7 +144,7 @@ footer {
   padding-bottom: 0.5rem;
 }
 
-/* MAP SECTION */
+/* Map */
 #map-section {
   background-color: var(--light);
   border: 2px solid var(--red);
@@ -145,13 +154,59 @@ footer {
   overflow: hidden;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .subsections {
     flex-direction: column;
   }
 }
-/* Gear page specific */
+.signup-form {
+  text-align: center;
+  padding: 30px;
+}
+.signup-form {
+  max-width: 400px;
+  margin: 3rem auto;
+  background-color: var(--blue);
+  padding: 2rem;
+  border-radius: 8px;
+  color: var(--light);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.signup-form input[type="email"] {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.signup-form button {
+  background-color: var(--red);
+  color: var(--light);
+  border: none;
+  padding: 0.8rem 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: var(--dark);
+}
+/* Gear  */
 
 .gear-intro {
   max-width: 800px;
@@ -179,7 +234,18 @@ footer {
   margin: 3rem 1rem;
   flex-wrap: wrap;
 }
+.gear-categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 2rem; 
+}
 
+.category {
+  background-color: var(--light);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
 .category {
   background-color: var(--blue);
   color: var(--light);
@@ -192,7 +258,15 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+.category ul li a {
+  color: var(--light);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
 
+.category ul li a:hover {
+  color: var(--red);
+}
 .category h2 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
@@ -308,4 +382,43 @@ footer {
 
 .back-home a:hover {
   color: var(--dark);
+}
+.random-tip {
+  text-align: center;
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+  width: 80%;
+  max-width: 700px;
+}
+
+.random-tip h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.random-tip button {
+  background-color: var(--red);
+  color: var(--light);
+  border: none;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.random-tip button:hover {
+  background-color: var(--blue);
+}
+
+.random-tip p {
+  margin-top: 1.5rem;
+  font-size: 1.4rem; 
+  font-weight: bold;
+  color: var(--blue);
+  line-height: 1.4;
 }

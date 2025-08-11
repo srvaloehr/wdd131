@@ -5,21 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The JogLog - Guide</title>
   <link rel="stylesheet" href="styles/JogLog.css" />
+   <script src="scripts/guide.js"></script>
+   <script src="./scripts/getdates.js" defer></script>
 </head>
 <body>
   <header>
-    <div class="logo">The JogLog</div>
+    <div class="logo">
+      <img src="images/Logo.webp" alt="The JogLog Logo">
+    </div>
+    
     <nav>
       <a href="JogLog.html">Home</a>
-      <a href="Gear.html">Gear</a>
-      <a href="Guide.html" aria-current="page">Guide</a>
+      <a href="Gear.html">Gear</a>  
+      <a href="Guide.html">Guide</a>
     </nav>
   </header>
 
+
   <main>
     <section class="guide-intro">
-      <h1>Welcome to the Running Guide</h1>
+      <h1>Welcome to the Guide</h1>
       <p>Whether youre just starting or looking to improve, explore our tips, recovery advice, and running programs to keep you on track.</p>
+    </section>
+    <section class="random-tip">
+        <h2>Need a Quick Tip?</h2>
+         <button id="randomTipBtn">Get Random Tip</button>
+        <p id="tipDisplay">Click the button for a running tip!</p>
     </section>
 
     <section class="guide-categories">
@@ -46,20 +57,27 @@
       </div>
 
       <div class="category">
-        <h2>Program</h2>
+        <h2>Helpful Sites</h2>
         <ul>
-          <li>Beginner 5K training plan</li>
-          <li>Intermediate 10K program</li>
-          <li>Interval and speed workouts</li>
-          <li>Long runs and endurance building</li>
-          <li>Cross-training ideas</li>
+            <li><a href="https://www.runnersworld.com/" target="_blank" rel="noopener noreferrer">Runners World</a></li>
+            <li><a href="https://runnersconnect.net/5k-and-10k-training/" target="_blank" rel="noopener noreferrer">5K 10K Training</a></li>
+            <li><a href="https://www.letsrun.com/" target="_blank" rel="noopener noreferrer">Lets Run</a></li>
+            <li><a href="https://www.runningwarehouse.com/?ctc=irfbgoutdoorrunningsites" target="_blank" rel="noopener noreferrer">Runners Warehouse</a></li>
+            <li><a href="https://www.roadrunnersports.com/?ctc=irfbgoutdoorrunningsites&utm_source=impact&utm_medium=affiliate&utm_content=Skimbit%20Ltd.&utm_campaign=Online%20Tracking%20Link&irclickid=x5EzLGwuKxyKRLMVnQ3GMRT6Ukpx9YWv83TGzY0&irgwc=1" target="_blank" rel="noopener noreferrer">Road Runner Sports</a></li>
+
+        
         </ul>
       </div>
     </section>
-
+    
     <section class="back-home">
       <a href="JogLog.html">← Back to Home</a>
     </section>
   </main>
+  <footer>
+      <p>©<span id="lastModified"></span> Stephen Loehr</p>
+      <p id="lastmodified"></p> <span id="currentyear"></span>
+      
+  </footer>
 </body>
 </html>
